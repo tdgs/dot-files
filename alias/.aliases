@@ -1,0 +1,36 @@
+alias be="bundle exec"
+alias br="bundle exec rails"
+alias ber="bundle exec rspec --format d"
+alias brake="bundle exec rake"
+alias xp="cd ~/xing/profile"
+alias xc="cd ~/xing/communities"
+alias ww="cd ~/projects/when-where"
+alias tfd="tail -f log/development.log"
+alias tft="tail -f log/test.log"
+alias git="nocorrect git"
+alias gg="nocorrect git grep"
+
+alias gospec="ssh vagrant@specrunner-giorgos-avramidis.env.xing.com"
+alias gosand="ssh vagrant@tdgs-giorgos-avramidis.env.xing.com"
+
+# Postgres
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgstatus="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log status"
+
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+alias goedge="ssh app-deploy@profiles-1.app.edge.fra2.xing.com"
+
+alias redisstart="redis-server /usr/local/etc/redis.conf"
+
+alias hp="cd ~/projects/hype_around"
+alias sugar="cd ~/projects/sugar"
+alias jobo="cd ~/projects/jobo"
+alias bb="cd ~/xing/brainbot"
+
+alias dbreset="bundle exec rake db:drop db:create db:migrate db:test:prepare"
+alias ls="ls --color"
+alias cn="cd ~/xing/content"
+
+alias cnprod="ssh app-deploy@content-1.worker.fra2.xing.com -t 'cd /virtual/app/current; PATH=/opt/ruby-2.2.3/bin:$PATH ./bin/rails console production'"
+alias cnprev="ssh app-deploy@content-1.worker.preview.fra2.xing.com -t 'cd /virtual/app/current; PATH=/opt/ruby-2.2.3/bin:$PATH ./bin/rails console preview'"
